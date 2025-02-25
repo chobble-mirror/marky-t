@@ -1,0 +1,14 @@
+---
+layout: base.html
+---
+
+<article>{{ content }}</article>
+
+{% for testimonial in testimonials %}
+<blockquote>
+  &#8220;{{ testimonial.text }}&#8221;
+  <footer>
+    <a rel="nofollow" href="{{ testimonial.url }}"> {{ testimonial.name }} </a>
+  </footer>
+</blockquote>
+{% endfor %}
