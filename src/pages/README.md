@@ -11,9 +11,9 @@ Each page starts with a block surrounded by three dashes, like below:
 
 ```
 ---
-title: My Page Title
-heading: My Heading
-description: My Meta Description
+meta_title: My Page Title
+meta_description: My Meta Description
+heading_text: My Heading
 ---
 
 The content of the page, with images, formatting, etc

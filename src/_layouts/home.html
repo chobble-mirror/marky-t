@@ -3,4 +3,17 @@ layout: base.html
 css: home
 ---
 
-<article>{{ content }}</article>
+<article>
+  {% capture mark_selfie %}
+  <img
+    src="/assets/photos/mark-selfie.jpg"
+    class="mark-selfie"
+    loading="lazy"
+    alt="Photo of Mark T in a suit and yellow bow tie"
+  />
+  {% endcapture %} {% assign content = content | replace: "mark_selfie",
+  mark_selfie %} {{ content }}
+  <div class="clear"></div>
+</article>
+
+<section>{% include "contact-form.html" %}</section>

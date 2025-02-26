@@ -1,0 +1,16 @@
+<section class="
+  heading
+  {% if heading_video %} has-video {% endif%}
+  {% if heading_image %} has-image {% endif%}
+">
+  {% if heading_video %}
+    <video autoplay="1" muted="1" loop="1">
+      <source src="/assets/videos/{{ heading_video }}" type="video/mp4">
+    </video>
+  {% elsif heading_image %}
+    <img src="/assets/photos/{{ heading_image }}">
+  {% endif %}
+  {% if heading_text %}
+    <h1>{{ heading_text }}</h1>
+   {% endif %}
+</section>

@@ -1,9 +1,10 @@
 ---
-link_title: About
+heading_image: mark-suit.jpg
+heading_text: About Marky T
 link_order: 1
-title: About Me
-heading: About DJ Marky T
-description:
+link_title: About
+meta_description:
+meta_title: About Marky T
 ---
 
 ## Fusce eget posuere lectus.

@@ -1,0 +1,13 @@
+<ul class="services-list">
+  {% for service in collections.service %}
+    <li>
+      <a href="{{ service.url }}">
+        {{ service.data.link_title }}
+      </a>
+      {% if link_title == "Services" and service.data.snippet %}
+        <br>
+        {{ service.data.snippet }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

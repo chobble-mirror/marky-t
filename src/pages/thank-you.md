@@ -1,6 +1,6 @@
 ---
-title: Thank You!
-heading: Thank You!
+heading_text: Thank You!
+meta_title: Thank You!
 ---
 
 # Thank You!

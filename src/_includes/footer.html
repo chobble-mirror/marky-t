@@ -1,5 +1,12 @@
 <section>
-  {% include "footer-contact.html" %}
   {% include "social-media-links.html" %}
-  <span>&copy; DJ Marky T 2025</span>
+  <ul class="contact">
+    <li>Phone: <a href="tel:000">07123 456 789</a></li>
+    <li>&copy; DJ Marky T 2025</li>
+    {% if link_title == "Home" %}
+      <li class="chobble-link">
+        <a rel="nofollow" href="https://chobble.com">Built by Chobble</a>
+      </li>
+    {% endif %}
+  </ul>
 </section>
