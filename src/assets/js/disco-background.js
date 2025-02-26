@@ -1,7 +1,10 @@
 (() => {
-  document.addEventListener("DOMContentLoaded", function () {
-    initDiscoLights();
-  });
+  document.onreadystatechange = function () {
+    console.log(document.readyState);
+    if (document.readyState === "complete") {
+      initDiscoLights();
+    }
+  };
 
   function initDiscoLights() {
     const container = document.querySelector(".disco-container");

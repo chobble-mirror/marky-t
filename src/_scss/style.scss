@@ -220,7 +220,7 @@ main {
     position: absolute;
     border-radius: 50%;
     filter: blur(100px); // Creates the soft, blurry effect
-    opacity: 0.5;
+    opacity: 0;
     transition: all 3s ease-in-out;
 
     &::after {
