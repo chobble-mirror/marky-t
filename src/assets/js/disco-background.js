@@ -14,73 +14,76 @@ function initDiscoLights() {
     const colors = [
       "rgba(255, 0, 128, 0.3)", // Pink
       "rgba(0, 153, 255, 0.3)", // Blue
-      "rgba(255, 204, 0, 0.3)", // Yellow
       "rgba(102, 0, 204, 0.3)", // Purple
-      "rgba(0, 204, 102, 0.3)", // Green
     ];
-    const lightCount = 10;
+    const lightCount = 40;
 
-    /**
-     * Creates a single disco light element
-     */
+    let lastAnimationTime = 0;
+    const animationInterval = 3000;
+    let animationFrameId;
+
     function createDiscoLight(index) {
       const light = document.createElement("div");
       light.className = "disco-light";
 
-      // Random size between 120px and 450px
-      const size = Math.random() * 330 + 120;
+      const size = Math.random() * 330 + 40;
       light.style.width = `${size}px`;
       light.style.height = `${size}px`;
 
-      // Random position
       positionLight(light, index);
 
-      // Random color
       const colorIndex = Math.floor(Math.random() * colors.length);
       light.style.backgroundColor = colors[colorIndex];
 
       container.appendChild(light);
     }
 
-    /**
-     * Sets a random position for a light element
-     * @param {HTMLElement} light - The light element to position
-     */
     function positionLight(light, index) {
-      const x = Math.random() * 100;
-      let y = Math.random() * 33;
-      if (index > 4 && index < 8) y += 33;
-      else if (index >= 8) y += 66;
+      const xSection = index % 3;
+      const ySection = Math.floor((index % 9) / 3); // This creates groups of 3 vertically
+
+      let x = Math.random() * 33 + xSection * 33;
+      let y = Math.random() * 33 + ySection * 33;
 
       light.style.left = `${x}%`;
       light.style.top = `${y}%`;
     }
 
-    /**
-     * Animates all lights to new random positions
-     */
-    function animateLights() {
-      const lights = document.querySelectorAll(".disco-light");
+    function animationLoop(timestamp) {
+      let firstStep = false;
+      if (!lastAnimationTime) {
+        firstStep = true;
+        lastAnimationTime = timestamp;
+      }
+      const elapsed = timestamp - lastAnimationTime;
 
-      lights.forEach((light) => {
-        // Generate new random position
-        const x = Math.random() * 100;
-        const y = Math.random() * 100;
+      if (elapsed >= animationInterval || firstStep) {
+        const lights = document.querySelectorAll(".disco-light");
 
-        // Animate to new position
-        light.style.transform = `translate(${x - 50}%, ${y - 50}%)`;
-      });
+        lights.forEach((light) => {
+          const opacity = Math.random() * 0.7;
+          light.style.opacity = opacity;
 
-      // Schedule next animation
-      setTimeout(animateLights, 2000); // Move lights every 10 seconds
+          const size = Math.random() * 330 + 40;
+          light.style.width = `${size}px`;
+          light.style.height = `${size}px`;
+
+          const x = Math.random() * 100;
+          const y = Math.random() * 100;
+          light.style.transform = `translate(${x - 50}%, ${y - 50}%)`;
+        });
+
+        lastAnimationTime = timestamp;
+      }
+
+      animationFrameId = requestAnimationFrame(animationLoop);
     }
 
-    // Initialize the lights
     for (let i = 0; i < lightCount; i++) {
       createDiscoLight(i);
     }
 
-    // Start the animation loop
-    animateLights();
+    animationLoop();
+    animationFrameId = requestAnimationFrame(animationLoop);
   })(); // Immediately invoke the function
 }

@@ -23,7 +23,7 @@
   --width-card: 285px;
   --width-card-medium: 460px;
   --width-card-wide: 800px;
-  --width-content: 1080px;
+  --width-content: 1200px;
 }
 
 html {
@@ -52,35 +52,24 @@ body {
   position: relative;
 }
 
-footer,
-header,
-main {
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 3rem 1rem;
-  max-width: var(--width-content);
-}
-
-body > footer,
-body > header,
-body > main {
+.container {
   background: var(--color-bg-secondary);
   background: linear-gradient(
     90deg,
-    #000 0%,
-    #11111111 20%,
-    #11111111 80%,
-    #000 100%
+    #00000099 0%,
+    #11111111 50%,
+    #00000099 99%
   );
   width: var(--width-content);
-  max-width: calc(100vw - 4rem);
+  max-width: 100%;
   z-index: 1;
+  margin: 0 auto;
 }
 
-body > header {
+.container > header {
   position: relative;
+  padding: 3rem 1rem 3rem 2rem;
   border-bottom: 8px solid #d4af37;
-  padding-left: 2rem;
   z-index: 3;
   .brand {
     font-family: "Beau Rivage", handwriting;
@@ -89,12 +78,7 @@ body > header {
   }
 }
 
-body > .heading {
-  margin: 0 auto;
-  z-index: -1;
-  background: var(--color-bg-secondary);
-  width: var(--width-content);
-  max-width: calc(100vw - 4rem);
+.heading {
   border-bottom: 2px solid #d4af37;
   position: relative;
 
@@ -126,12 +110,12 @@ body > .heading {
   }
 }
 
-body > main {
+main {
   min-height: 100vh;
+  padding: 3rem 1rem;
+
   a {
     text-decoration: underline;
-  }
-  p {
   }
   video,
   img {
@@ -159,16 +143,11 @@ body > main {
   h5,
   h6 {
     color: var(--color-text-secondary);
-    padding-left: 0.5rem;
-    padding-left: 0.5rem;
-  }
-  p {
-    padding-left: 0.5rem;
-    padding-left: 0.5rem;
   }
 }
 
-body > footer {
+.container > footer {
+  padding: 3rem 1rem;
   border-top: 4px solid #d4af37;
   font-family: "Asap Condensed", sans-serif;
   font-weight: 400;
@@ -235,13 +214,14 @@ body > footer {
   left: 0;
   overflow: hidden;
   z-index: -1;
+  transform: translateZ(0.1);
 
   .disco-light {
     position: absolute;
     border-radius: 50%;
     filter: blur(100px); // Creates the soft, blurry effect
     opacity: 0.5;
-    transition: all 2s ease-in-out;
+    transition: all 3s ease-in-out;
 
     &::after {
       content: "";
@@ -320,13 +300,17 @@ nav {
   font-weight: 400;
   font-size: 1.3rem;
 
+  @media (min-width: 900px) {
+    font-size: 1.8rem;
+  }
+
   img {
     margin: 1rem 0;
     max-width: 150px;
     height: auto;
   }
 
-  ul {
+  & > ul {
     list-style: none;
     padding: 0;
     li {
@@ -381,6 +365,13 @@ nav {
 
 /* Nav for Mobile */
 @media (max-width: 768px) {
+  .container > footer,
+  header,
+  .heading,
+  main {
+    max-width: 100%;
+  }
+
   nav {
     flex-wrap: wrap;
     ul li {
@@ -391,6 +382,7 @@ nav {
         box-shadow: none;
         display: block;
         position: static;
+        transform: none;
       }
     }
   }
@@ -581,7 +573,7 @@ form {
   header {
     font-family: "Beau Rivage", handwriting;
     font-size: 2rem;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.5rem;
   }
 }
 
