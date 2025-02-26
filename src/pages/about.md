@@ -2,20 +2,12 @@
 link_title: About
 link_order: 1
 title: About Me
-heading: About Me
+heading: About DJ Marky T
 description:
 ---
 
-I’m Kevin Burke, a Manchester-based web marketer with huge experience and proven results. It’s no secret that the online marketing industry is full of companies that offer a poor service, and it’s hard to find anyone at a low price-point that will do any SEO beyond analysis. Companies that offer reliable content writing or linkbuilding services often charge over £1,000 a month!
+## Fusce eget posuere lectus.
 
-I offer a full SEO and marketing service to companies in all industries, providing high-quality content and relevant, authoritative linkbuilding at a low price.
+Etiam vel turpis a nunc volutpat elementum a a augue. Nam auctor, diam aliquet dignissim lacinia, urna urna egestas libero, eget luctus leo mi non felis. Morbi faucibus ex placerat, ullamcorper elit vel, condimentum erat. Praesent euismod lobortis nibh, in tincidunt sem dapibus ut. Sed convallis nulla a odio pretium molestie.
 
-## Typical prices
-
-Prices are based at £33.33 for each ‘block’ of work on your website. Although it is impossible to guarantee a certain amount of work completed within one block, it is based on the following:
-
-- 500 words of non-technical content, such as product descriptions or advertising pages
-- Between three and five backlinks
-- A 250-word press release - publishing this press release will likely take another half a block
-
-Technical content, PPC and other services can be bundled into your agreed payments and will be charged at the same rate.
+**Morbi imperdiet dapibus elementum. Mauris sit amet facilisis felis. Proin dignissim ultrices venenatis. Morbi maximus venenatis magna, et pellentesque massa bibendum sit amet. In eget diam vel magna maximus faucibus.**

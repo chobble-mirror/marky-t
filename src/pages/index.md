@@ -1,27 +1,14 @@
 ---
 layout: home.html
-title: Kevin Burke Web Marketing
-heading: SEO, Content Writing, PR and Online Marketing
+title: DJ Marky T
+heading: Luxury Wedding & Corporate Event DJ
 link_title: Home
 link_order: 0
 description:
 permalink: "/"
+video: homepage.mp4
 ---
 
-## Get your business noticed online
+Marky T started entertaining from the young age of eleven, progressing from friends and family to children's parties to radio and night clubs since 2003 including Talk, Dukes, Sugar Hut, Mayhem, Eclipse, Bar Zero, Bar Bluu, Mantra Tao, Storm to name just a few of the legendary nightlife of Essex. Mark has also appeared on various tv and radio channels coming second place on Capital Fm 'Radio Stars' and then having frequent day time shows on Funky Sx. He is now a weekday presenter on Radio Essex. Mark is a personality Dj with the ability to mix, and get the crowd on the dance floor understating what to play and when to play it.
 
-Welcome to my website!
-
-I’m a marketer that can transform your business! Despite offering prices that match the lower end of the market, I provide a top-quality service, so I’m the best way to get the most bang for your buck.
-
-My lowest price is just £100, which can be one off or repeated on a monthly basis.
-
-Skills include:
-
-- [SEO](/seo-search-engine-optimisation/)
-- Content writing
-- Press Releases
-- Online Reputation Management
-- and PPC
-
-Check out [my contact page](/contact/) to see how to get in touch!
+Marky T has years of experience and all have worked at the best nightclubs in Essex including: Talk (tots) Dukes, Sugarhut, Eclipse to name just a few. I am offer a wide range of services, ranging from Voiceover work to birthday parties!

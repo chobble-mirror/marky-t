@@ -1,0 +1,18 @@
+<ul class="social-links">
+  {% for item in socials %}
+  <li>
+    <a
+      aria-label="{{ item[1].text }}"
+      title="{{ item[1].text }}"
+      href="{{ item[1].url }}"
+    >
+      <img
+        src="/assets/icons/{{ item[0] }}.svg"
+        width="50"
+        height="50"
+        alt="{{ item[0] | capitalize }} logo"
+      >
+    </a>
+  </li>
+  {% endfor %}
+</ul>

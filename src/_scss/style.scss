@@ -3,17 +3,18 @@
 :root {
   --active-brightness: 0.85;
   --border-radius: 5px;
-  --box-shadow: 2px 2px 10px;
+  --box-shadow: 1px 1px 5px;
   --color-accent: #118bee15;
-  --color-bg: #c29979;
-  --color-bg-secondary: #f3d9b1;
-  --color-link: #a22522;
-  --color-secondary: #920de9;
-  --color-secondary-accent: #920de90b;
-  --color-shadow: #f4f4f4;
+  --color-bg: #222;
+  --color-gold: #d4af37;
+  --color-bg-secondary: #111;
+  --color-link: #ffffff;
+  --color-secondary: #d4af37;
+  --color-secondary-accent: #d4af37;
+  --color-shadow: #44444444;
   --color-table: #118bee;
-  --color-text: #000;
-  --color-text-secondary: #999;
+  --color-text: #eeeeee;
+  --color-text-secondary: #dddddd;
   --color-scrollbar: #cacae8;
   --font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
@@ -46,7 +47,7 @@ article aside {
 }
 
 body {
-  background: #c29979;
+  background: var(--color-bg);
   background-attachment: fixed;
   color: var(--color-text);
   font-family: var(--font-family);
@@ -72,32 +73,71 @@ body > main {
   max-width: calc(100vw - 4rem);
 }
 
+body > .hero {
+  margin: 0 auto;
+  background: var(--color-bg-secondary);
+  width: var(--width-content);
+  max-width: calc(100vw - 4rem);
+
+  h1 {
+    background: #000000;
+    color: var(--color-secondary);
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 2px solid #d4af37;
+  }
+}
+
 body > header {
-  margin-top: 2rem;
-  border-radius: 0.5rem 0.5rem 0 0;
-  border-bottom: 4px solid #c29979;
+  border-bottom: 8px solid #d4af37;
+  padding-left: 2rem;
+  .brand {
+    font-family: "Gochi Hand", handwriting;
+    text-decoration: none;
+    font-size: 3rem;
+  }
 }
 
 body > main {
   background: var(--color-bg-secondary);
+  a {
+    text-decoration: underline;
+  }
 }
 
 body > footer {
-  border-top: 4px solid #c29979;
-  margin-bottom: 2rem;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-top: 4px solid #d4af37;
   font-family: "Asap", sans-serif;
   font-weight: 600;
 
   section {
     gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 0.5rem;
+  img {
+    filter: invert(90%);
+    &:hover {
+      filter: invert(100%);
+    }
   }
 }
 
 body > header,
 body > footer {
-  background-color: #f3d9b1;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='83' height='83' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23C29979' fill-opacity='0.16' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+  background-color: var(--color-bg-secondary);
 }
 
 hr {
@@ -115,8 +155,9 @@ section {
 }
 
 section img,
-article img {
-  max-width: 100%;
+article img,
+section video {
+  width: 100%;
 }
 
 section pre {
@@ -176,6 +217,7 @@ nav {
   justify-content: space-between;
   font-family: "Asap", sans-serif;
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 nav img {
@@ -201,13 +243,13 @@ nav ul li:hover ul {
 }
 
 nav ul li ul {
-  background: var(--color-bg);
-  border: 1px solid var(--color-bg-secondary);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow) var(--color-shadow);
   display: none;
   height: auto;
-  left: -2px;
+  right: -2px;
   padding: 0.5rem 1rem;
   position: absolute;
   top: 1.7rem;
@@ -232,7 +274,7 @@ nav ul li ul li a {
 }
 
 nav .active {
-  color: var(--color-text);
+  color: var(--color-gold);
 }
 
 /* Nav for Mobile */
@@ -246,6 +288,7 @@ nav .active {
   }
 
   nav ul li ul {
+    background: none;
     border: none;
     box-shadow: none;
     display: block;
@@ -292,7 +335,7 @@ main {
   h4,
   h5,
   h6 {
-    color: #c33149;
+    color: var(--color-text-secondary);
   }
 }
 
@@ -341,20 +384,17 @@ sup {
   top: -2px;
 }
 
-/* Links */
 a {
   color: var(--color-link);
   display: inline-block;
   font-weight: bold;
-  text-decoration: underline;
+  transition: color 0.3s ease-in;
+  text-decoration: none;
 }
 
-a:hover {
-  filter: brightness(var(--hover-brightness));
-}
-
+a:hover,
 a:active {
-  filter: brightness(var(--active-brightness));
+  color: var(--color-gold);
 }
 
 a b,
@@ -439,7 +479,7 @@ input[type="submit"][disabled]:hover {
 }
 
 form {
-  background: var(--color-bg-secondary);
+  background: var(--color-bg);
   border: 1px solid var(--color-bg-secondary);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow) var(--color-shadow);

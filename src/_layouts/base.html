@@ -9,7 +9,7 @@
     <meta name="description" content="{{ description | escape }}" />
     {% endif -%}
     <link rel="preconnect" href="https://fonts.bunny.net" />
-    <link href="https://fonts.bunny.net/css?family=asap:600" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=asap:600|gochi-hand:400" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -22,7 +22,10 @@
     {% endif -%}
   </head>
   <body class="{{ css }}">
-    <header>{% include "navbar.html" %}</header>
+    <header>
+      {% include "header.html" %}
+    </header>
+    {% include "hero.html" %}
     <main>{{content }}</main>
     <footer>{% include "footer.html" %}</footer>
   </body>

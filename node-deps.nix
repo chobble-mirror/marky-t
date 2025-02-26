@@ -6,7 +6,7 @@ let
   packageJSON = pkgs.writeTextFile {
     name = "package.json";
     text = builtins.toJSON {
-      name = "kevinburkeservices-com";
+      name = "djmarkyt-co-uk";
       version = "1.0.0";
       dependencies = {
         "@11ty/eleventy" = "^3.0.0";
@@ -17,7 +17,7 @@ let
   };
 
   nodeModules = pkgs.mkYarnModules {
-    pname = "kevinburkeservices-com-deps";
+    pname = "djmarkyt-co-uk-deps";
     version = "1.0.0";
     packageJSON = packageJSON;
     yarnLock = ./yarn.lock;

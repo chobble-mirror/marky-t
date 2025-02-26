@@ -1,5 +1,5 @@
 {
-  description = "KevinBurkeServices.com";
+  description = "DJMarkyT.co.uk";
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
   };

@@ -1,0 +1,18 @@
+{
+	"facebook": {
+		"text": "Follow Marky T on Facebook",
+		"url": "https://www.facebook.com/markytdj"
+	},
+	"linkedin": {
+		"text": "Add Marky T on LinkedIn",
+		"url": "https://www.linkedin.com/in/mark-tydeman-8a7676157/"
+	},
+	"instagram": {
+		"text": "Follow Marky T on Instagram",
+		"url": "https://www.instagram.com/djmarkyt"
+	},
+	"google": {
+		"text": "Check out Marky T on Google Maps",
+		"url": "https://maps.app.goo.gl/"
+	}
+}

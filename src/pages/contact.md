@@ -6,8 +6,8 @@ title: Contact Me
 heading: Contact Kevin
 ---
 
-I'd love to hear from you! Please don't hesitate to get in touch with me to make an order or if you have any questions.
+Fusce eget posuere lectus. Etiam vel turpis a nunc volutpat elementum a a augue. Nam auctor, diam aliquet dignissim lacinia, urna urna egestas libero, eget luctus leo mi non felis.
 
-Email me: [info@kevinburkeservices.com](mailto:info@kevinburkeservices.com)
+**Morbi faucibus ex placerat, ullamcorper elit vel, condimentum erat.**
 
-[Add me on Facebook!](https://www.facebook.com/kevinburkeseo)
+Praesent euismod lobortis nibh, in tincidunt sem dapibus ut. Sed convallis nulla a odio pretium molestie.
