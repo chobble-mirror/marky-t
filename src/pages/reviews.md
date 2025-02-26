@@ -1,7 +1,7 @@
 ---
 layout: testimonials.html
 title: Reviews & Testimonials
-link_title: Testimonials
+link_title: Reviews
 heading: Reviews / Testimonials
 link_order: 3
 ---
