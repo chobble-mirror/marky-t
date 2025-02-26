@@ -1,91 +1,83 @@
 (() => {
-  // Wait for DOM to be fully loaded
   document.addEventListener("DOMContentLoaded", function () {
-    // Initialize disco lights effect
     initDiscoLights();
   });
 
-  /**
-   * Initializes and manages the disco lights effect
-   */
   function initDiscoLights() {
-    // Use IIFE to avoid polluting global namespace
-    (function () {
-      const container = document.querySelector(".disco-container");
-      const colors = [
-        "rgba(255, 0, 128, 0.3)", // Pink
-        "rgba(0, 153, 255, 0.3)", // Blue
-        "rgba(102, 0, 204, 0.3)", // Purple
-      ];
-      const lightCount = 40;
+    const container = document.querySelector(".disco-container");
+    const colors = [
+      "rgba(255, 0, 128, 0.3)", // Pink
+      "rgba(0, 153, 255, 0.3)", // Blue
+      "rgba(102, 0, 204, 0.3)", // Purple
+    ];
+    const lightCount = 40;
 
-      let lastAnimationTime = 0;
-      const animationInterval = 3000;
-      let animationFrameId;
+    let lastAnimationTime = 0;
+    const animationInterval = 3000;
+    let animationFrameId;
 
-      function createDiscoLight(index) {
-        const light = document.createElement("div");
-        light.className = "disco-light";
+    function createDiscoLight(index) {
+      const light = document.createElement("div");
+      light.className = "disco-light";
 
-        const size = Math.random() * 330 + 40;
-        light.style.width = `${size}px`;
-        light.style.height = `${size}px`;
+      const size = Math.random() * 330 + 40;
+      light.style.width = `${size}px`;
+      light.style.height = `${size}px`;
 
-        positionLight(light, index);
+      positionLight(light, index);
 
-        const colorIndex = Math.floor(Math.random() * colors.length);
-        light.style.backgroundColor = colors[colorIndex];
+      const colorIndex = Math.floor(Math.random() * colors.length);
+      light.style.backgroundColor = colors[colorIndex];
 
-        container.appendChild(light);
+      container.appendChild(light);
+    }
+
+    function positionLight(light, index) {
+      const xSection = index % 3;
+      const ySection = Math.floor((index % 9) / 3); // This creates groups of 3 vertically
+
+      let x = Math.random() * 33 + xSection * 33;
+      let y = Math.random() * 33 + ySection * 33;
+
+      light.style.left = `${x}%`;
+      light.style.top = `${y}%`;
+    }
+
+    function animationLoop(timestamp) {
+      let firstStep = false;
+      if (!lastAnimationTime) {
+        firstStep = true;
+        lastAnimationTime = timestamp;
+      }
+      const elapsed = timestamp - lastAnimationTime;
+
+      if (elapsed >= animationInterval || firstStep) {
+        const lights = document.querySelectorAll(".disco-light");
+
+        lights.forEach((light) => {
+          const opacity = Math.random() * 0.7;
+          light.style.opacity = opacity;
+
+          const size = Math.random() * 330 + 40;
+          light.style.width = `${size}px`;
+          light.style.height = `${size}px`;
+
+          const x = Math.random() * 100;
+          const y = Math.random() * 100;
+          light.style.transform = `translate(${x - 50}%, ${y - 50}%)`;
+        });
+
+        lastAnimationTime = timestamp;
       }
 
-      function positionLight(light, index) {
-        const xSection = index % 3;
-        const ySection = Math.floor((index % 9) / 3); // This creates groups of 3 vertically
-
-        let x = Math.random() * 33 + xSection * 33;
-        let y = Math.random() * 33 + ySection * 33;
-
-        light.style.left = `${x}%`;
-        light.style.top = `${y}%`;
-      }
-
-      function animationLoop(timestamp) {
-        let firstStep = false;
-        if (!lastAnimationTime) {
-          firstStep = true;
-          lastAnimationTime = timestamp;
-        }
-        const elapsed = timestamp - lastAnimationTime;
-
-        if (elapsed >= animationInterval || firstStep) {
-          const lights = document.querySelectorAll(".disco-light");
-
-          lights.forEach((light) => {
-            const opacity = Math.random() * 0.7;
-            light.style.opacity = opacity;
-
-            const size = Math.random() * 330 + 40;
-            light.style.width = `${size}px`;
-            light.style.height = `${size}px`;
-
-            const x = Math.random() * 100;
-            const y = Math.random() * 100;
-            light.style.transform = `translate(${x - 50}%, ${y - 50}%)`;
-          });
-
-          lastAnimationTime = timestamp;
-        }
-
-        animationFrameId = requestAnimationFrame(animationLoop);
-      }
-
-      for (let i = 0; i < lightCount; i++) {
-        createDiscoLight(i);
-      }
-
-      animationLoop();
       animationFrameId = requestAnimationFrame(animationLoop);
-    })(); // Immediately invoke the function
+    }
+
+    for (let i = 0; i < lightCount; i++) {
+      createDiscoLight(i);
+    }
+
+    animationLoop();
+    animationFrameId = requestAnimationFrame(animationLoop);
   }
 })();
