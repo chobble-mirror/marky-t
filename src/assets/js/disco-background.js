@@ -44,11 +44,9 @@
     }
 
     function animationLoop(timestamp) {
-      let firstStep = false;
-      if (!lastAnimationTime) {
-        firstStep = true;
-        lastAnimationTime = timestamp;
-      }
+      let firstStep = !lastAnimationTime;
+      if (firstStep) lastAnimationTime = timestamp;
+
       const elapsed = timestamp - lastAnimationTime;
 
       if (elapsed >= animationInterval || firstStep) {
@@ -77,7 +75,6 @@
       createDiscoLight(i);
     }
 
-    animationLoop();
     animationFrameId = requestAnimationFrame(animationLoop);
   }
 })();
