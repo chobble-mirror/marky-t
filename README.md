@@ -1,11 +1,11 @@
-# Kevin Burke
+# DJ Marky T
 
-The website for Kevin Burke Services
+The website for DJ Marky T
 
 **Important Files:**
 
 - [Pages to edit](src/pages)
 - [Upload images](src/assets)
 
-[kevinburkeservices.com](https://kevinburkeservices.com/)
+[djmarkyt.co.uk](https://djmarkyt.co.uk/)
 
