@@ -98,6 +98,10 @@ body {
     font-size: 3rem;
     -webkit-text-stroke: 1px #333;
     font-family: "Beau Rivage", handwriting;
+
+    @media (max-width: 789px) {
+      font-size: 2rem;
+    }
   }
   &.has-image,
   &.has-video {
