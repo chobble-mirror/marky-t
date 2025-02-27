@@ -13,7 +13,10 @@
       "rgba(0, 153, 255, 0.3)", // Blue
       "rgba(102, 0, 204, 0.3)", // Purple
     ];
-    const lightCount = 40;
+
+    let lightCount = 20;
+    if (document.scrollWidth > 1200) lightCount = 40;
+    else if (document.scrollWidth > 789) lightCount = 30;
 
     let lastAnimationTime = 0;
     const animationInterval = 3000;

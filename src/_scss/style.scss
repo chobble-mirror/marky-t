@@ -2,7 +2,7 @@
 
 :root {
   --active-brightness: 0.85;
-  --border-radius: 5px;
+  --border-radius: 2px;
   --box-shadow: 1px 1px 5px;
   --color-accent: #118bee15;
   --color-bg: #111;
@@ -11,12 +11,13 @@
   --color-secondary: #d4af37; /* gold */
   --color-shadow: #44444444;
   --color-table: #118bee;
-  --color-text: #eeeeee;
-  --color-text-secondary: #dddddd;
+  --color-text: #eee;
+  --color-text-secondary: #ddd;
   --color-scrollbar: #cacae8;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --font-condensed: "Asap Condensed", sans-serif;
+  --font-script: "Beau Rivage", handwriting;
   --hover-brightness: 1.2;
   --justify-important: center;
   --justify-normal: left;
@@ -25,6 +26,36 @@
   --width-card-medium: 460px;
   --width-card-wide: 800px;
   --width-content: 1300px;
+}
+
+@font-face {
+  font-family: "Asap Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url(/assets/fonts/asap-condensed-latin-400-normal.woff2) format("woff2"),
+    url(/assets/fonts/asap-condensed-latin-400-normal.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Asap Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url(/assets/fonts/asap-condensed-latin-700-normal.woff2) format("woff2"),
+    url(/assets/fonts/asap-condensed-latin-700-normal.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Beau Rivage";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url(/assets/fonts/beau-rivage-latin-400-normal.woff2) format("woff2"),
+    url(/assets/fonts/beau-rivage-latin-400-normal.woff) format("woff");
 }
 
 html {
@@ -43,7 +74,6 @@ html {
 
 body {
   background: var(--color-bg);
-  background-attachment: fixed;
   color: var(--color-text);
   font-family: var(--font-family);
   line-height: var(--line-height);
@@ -54,25 +84,24 @@ body {
 }
 
 .container {
-  background: var(--color-bg-secondary);
+  z-index: 1;
+  margin: 0 auto;
+  background: #11111111;
   background: linear-gradient(
     90deg,
     #00000099 0%,
     #11111111 50%,
     #00000099 99%
   );
-  width: var(--width-content);
+  width: 1300px;
   max-width: 100%;
-  z-index: 1;
-  margin: 0 auto;
 }
 
 .container > header {
-  position: relative;
-  padding: 3rem 1rem 3rem 2rem;
   z-index: 3;
+  padding: 3rem 1rem 3rem 2rem;
   .brand {
-    font-family: "Beau Rivage", handwriting;
+    font-family: var(--font-script);
     text-decoration: none;
     font-size: 3rem;
     display: inline-block;
@@ -100,7 +129,7 @@ body {
     padding: 1rem;
     font-size: 3rem;
     -webkit-text-stroke: 1px #333;
-    font-family: "Beau Rivage", handwriting;
+    font-family: var(--font-script);
 
     @media (max-width: 789px) {
       font-size: 2rem;
@@ -328,11 +357,6 @@ section {
   display: none;
 }
 
-div header,
-main header {
-  padding-top: 0;
-}
-
 header {
   text-align: var(--justify-important);
   a {
@@ -347,13 +371,14 @@ header {
 }
 
 nav {
+  font-size: 1.3rem;
+  font-family: var(--font-condensed);
   align-items: center;
   display: flex;
   font-weight: bold;
   justify-content: space-between;
   font-family: var(--font-condensed);
   font-weight: 400;
-  font-size: 1.3rem;
 
   @media (min-width: 900px) {
     font-size: 1.8rem;
@@ -604,7 +629,7 @@ input:disabled {
 
 form {
   background: var(--color-bg-secondary);
-  border: 1px solid var(--color-secondary);
+  border: 2px solid var(--color-secondary);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow) var(--color-shadow);
   display: block;
@@ -614,7 +639,7 @@ form {
   text-align: var(--justify-normal);
   margin-top: 3rem;
   header {
-    font-family: "Beau Rivage", handwriting;
+    font-family: var(--font-script);
     font-size: 2rem;
     padding: 1.5rem 0.5rem;
   }
@@ -772,13 +797,19 @@ blockquote {
   max-width: var(--width-card-wide);
   padding: 1.5rem 1rem;
   text-align: var(--justify-important);
-  font-family: "Beau Rivage", handwriting;
+  font-family: var(--font-script);
   footer {
+    font-family: var(--font-condensed);
     color: var(--color-text-secondary);
     display: block;
-    font-size: small;
+    font-size: 1.4rem;
     line-height: var(--line-height);
     padding: 1.5rem 0;
+    &::before {
+      content: "~";
+      display: inline-block;
+      font-size: 2rem;
+    }
   }
 }
 
