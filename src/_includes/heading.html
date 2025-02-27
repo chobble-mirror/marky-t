@@ -7,10 +7,17 @@
 ">
   {% if heading_video %}
     <video autoplay="1" muted="1" loop="1">
-      <source src="/assets/videos/{{ heading_video }}" type="video/mp4">
+      <source
+        src="/assets/videos/{{ heading_video }}"
+        type="video/mp4"
+      >
     </video>
   {% elsif heading_image %}
-    <img src="/assets/photos/{{ heading_image }}" alt="{{ heading_image_alt }}">
+    <img
+      src="/assets/photos/{{ heading_image }}"
+      alt="{{ heading_image_alt }}"
+      eleventy:widths="1400, 900, 600, 400, 300"
+    >
   {% endif %}
   {% if heading_text %}
     <h1>{{ heading_text }}</h1>
