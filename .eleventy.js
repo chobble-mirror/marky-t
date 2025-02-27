@@ -35,7 +35,7 @@ module.exports = async function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    formats: ["auto"],
+    formats: ["jpeg", "webp", "avif"],
     widths: ["1400, 1000, 700, 350"],
     svgShortCircuit: "size",
     htmlOptions: {
