@@ -1,18 +1,54 @@
-<link
-  rel="preload"
-  href="/assets/fonts/asap-condensed-latin-400-normal.woff2"
-  as="font"
-  type="font/woff2"
-/>
-<link
-  rel="preload"
-  href="/assets/fonts/asap-condensed-latin-700-normal.woff2"
-  as="font"
-  type="font/woff2"
-/>
-<link
-  rel="preload"
-  href="/assets/fonts/beau-rivage-latin-400-normal.woff2"
-  as="font"
-  type="font/woff2"
-/>
+<style type="text/css">
+  @font-face {
+    font-family: "Asap Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      url(/assets/fonts/asap-condensed-latin-400-normal.woff2) format("woff2"),
+      url(/assets/fonts/asap-condensed-latin-400-normal.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Asap Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+      url(/assets/fonts/asap-condensed-latin-700-normal.woff2) format("woff2"),
+      url(/assets/fonts/asap-condensed-latin-700-normal.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Beau Rivage";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      url(/assets/fonts/beau-rivage-latin-400-normal.woff2) format("woff2"),
+      url(/assets/fonts/beau-rivage-latin-400-normal.woff) format("woff");
+  }
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6,
+  nav ul {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 700;
+  }
+  .container > footer,
+  .services .services-list li a,
+  blockquote footer {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 400;
+  }
+  .container > header .brand,
+  .heading h1,
+  form header,
+  blockquote {
+    font-family: "Beau Rivage", handwriting;
+    font-weight: 400;
+  }
+</style>
