@@ -1,11 +1,10 @@
 const path = require("path");
+const { Image, eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-module.exports = function (eleventyConfig) {
-  // Add RSS plugin
+module.exports = async function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
-  // Get the newest date in a collection
   eleventyConfig.addFilter("getNewestCollectionItemDate", (collection) => {
     if (!collection || !collection.length) return new Date();
     return new Date(
@@ -15,7 +14,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./src/**/*");
 
-  // Copy static assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({
     "src/assets/favicon/*": "/",
@@ -34,6 +32,18 @@ module.exports = function (eleventyConfig) {
   // Add RFC 822 date filter for RSS feed
   eleventyConfig.addFilter("dateToRfc822", function (date) {
     return new Date(date).toUTCString();
+  });
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["auto"],
+    widths: ["1400, 1000, 700, 350"],
+    svgShortCircuit: "size",
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+    },
   });
 
   // Base configuration

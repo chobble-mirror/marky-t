@@ -23,7 +23,11 @@ I offer a wide range of services, ranging from voiceover work to birthday partie
 
 > "Another quote!"
 
-![Photo of Mark T in a suit and yellow bow tie](/assets/photos/mark-selfie.jpg#right)
+<div class="right">
+
+![Photo of Mark T in a suit and yellow bow tie](/assets/photos/mark-selfie.jpg)
+
+</div>
 
 Pellentesque in ex id mauris semper volutpat. In sit amet lectus enim. Integer et velit laoreet est ultrices mollis. Suspendisse potenti. Morbi ut tellus id ante placerat dapibus.
 

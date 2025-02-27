@@ -75,6 +75,8 @@ body {
     font-family: "Beau Rivage", handwriting;
     text-decoration: none;
     font-size: 3rem;
+    display: inline-block;
+    margin-right: 4rem;
   }
 }
 
@@ -85,6 +87,7 @@ body {
   video,
   img {
     width: 100%;
+    height: auto;
     display: block;
   }
 
@@ -131,19 +134,20 @@ main {
     display: block;
     border: 2px solid var(--color-text-secondary);
     max-width: 90%;
+    height: auto;
     margin: 0 auto 4rem;
-    &[src*="#left"] {
-      float: left;
-      margin-left: 0.5rem;
-      margin-right: 1rem;
-      max-width: 33%;
-    }
-    &[src*="#right"] {
-      float: right;
-      margin-right: 0.5rem;
-      margin-left: 1rem;
-      max-width: 33%;
-    }
+  }
+  .left img {
+    float: left;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    max-width: 33%;
+  }
+  .right img {
+    float: right;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    max-width: 33%;
   }
   h1,
   h2,

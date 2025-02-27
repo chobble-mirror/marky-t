@@ -10,6 +10,7 @@ let
       version = "1.0.0";
       dependencies = {
         "@11ty/eleventy" = "^3.0.0";
+        "@11ty/eleventy-img" = "^6.0.0";
         "@11ty/eleventy-plugin-rss" = "^2.0.2";
         "fast-glob" = "^3.3.2";
       };
