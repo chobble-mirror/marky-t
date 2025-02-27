@@ -16,6 +16,7 @@
   --color-scrollbar: #cacae8;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-condensed: "Asap Condensed", sans-serif;
   --hover-brightness: 1.2;
   --justify-important: center;
   --justify-normal: left;
@@ -23,7 +24,7 @@
   --width-card: 285px;
   --width-card-medium: 460px;
   --width-card-wide: 800px;
-  --width-content: 1200px;
+  --width-content: 1300px;
 }
 
 html {
@@ -69,7 +70,6 @@ body {
 .container > header {
   position: relative;
   padding: 3rem 1rem 3rem 2rem;
-  border-bottom: 8px solid #d4af37;
   z-index: 3;
   .brand {
     font-family: "Beau Rivage", handwriting;
@@ -89,30 +89,35 @@ body {
   }
 
   h1 {
-    background: #000000;
     color: var(--color-secondary);
     text-align: center;
     width: 100%;
     display: block;
     margin: 0;
     padding: 1rem;
-    font-size: 2.2rem;
+    font-size: 3rem;
     -webkit-text-stroke: 1px #333;
     font-family: "Beau Rivage", handwriting;
   }
-  &.has-image h1,
-  &.has-video h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000000cc;
+  &.has-image,
+  &.has-video {
+    border-top: 8px solid #d4af37;
+    h1 {
+      background: #000000;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000000cc;
+    }
   }
 }
 
 main {
   min-height: 100vh;
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
+  position: relative;
+  font-size: 1.3rem;
 
   a {
     text-decoration: underline;
@@ -143,13 +148,37 @@ main {
   h5,
   h6 {
     color: var(--color-text-secondary);
+    line-height: var(--line-height);
+    text-wrap: balance;
+    font-family: var(--font-condensed);
+    font-weight: 700;
+  }
+  hr {
+    background-color: var(--color-secondary);
+    border: none;
+    clear: both;
+    height: 3px;
+    display: block;
+    margin: 4rem -2rem;
+    width: calc(100% + 4rem);
+    &.fancy {
+      background-image: url("/assets/divider2.svg");
+      width: 30%;
+      background-size: 100% 100%;
+      aspect-ratio: 3191/219;
+      display: block;
+      background-color: transparent;
+      filter: invert(60%);
+      margin: 3rem auto;
+      height: auto;
+    }
   }
 }
 
 .container > footer {
   padding: 3rem 1rem;
   border-top: 4px solid #d4af37;
-  font-family: "Asap Condensed", sans-serif;
+  font-family: var(--font-condensed);
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.3rem;
@@ -202,6 +231,35 @@ main {
   }
 }
 
+.services {
+  .services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    li {
+      a {
+        font-family: var(--font-condensed);
+        color: var(--color-secondary);
+      }
+      font-size: 2rem;
+      &::after {
+        content: "";
+        display: block;
+        margin: 3rem auto;
+        background-image: url("/assets/divider2.svg");
+        width: 30%;
+        background-size: 100% 100%;
+        aspect-ratio: 3191/219;
+        filter: invert(70%);
+      }
+    }
+  }
+}
+
 .clear {
   clear: both;
 }
@@ -232,16 +290,6 @@ main {
       filter: blur(30px);
     }
   }
-}
-
-hr {
-  background-color: var(--color-secondary);
-  border: none;
-  clear: both;
-  height: 3px;
-  display: block;
-  margin: 4rem -1rem;
-  width: calc(100% + 2rem);
 }
 
 section {
@@ -290,13 +338,12 @@ header {
   }
 }
 
-/* Nav */
 nav {
   align-items: center;
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  font-family: "Asap Condensed", sans-serif;
+  font-family: var(--font-condensed);
   font-weight: 400;
   font-size: 1.3rem;
 
@@ -404,18 +451,6 @@ details {
     font-weight: bold;
     cursor: pointer;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: var(--line-height);
-  text-wrap: balance;
-  font-family: "Asap Condensed", sans-serif;
-  font-weight: 700;
 }
 
 mark {
