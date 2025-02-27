@@ -4,15 +4,7 @@ css: home
 ---
 
 <article>
-  {% capture mark_selfie %}
-  <img
-    src="/assets/photos/mark-selfie.jpg"
-    class="mark-selfie"
-    loading="lazy"
-    alt="Photo of Mark T in a suit and yellow bow tie"
-  />
-  {% endcapture %} {% assign content = content | replace: "mark_selfie",
-  mark_selfie %} {{ content }}
+  {{ content }}
   <div class="clear"></div>
 </article>
 

@@ -19,7 +19,7 @@ I am a personality DJ with the ability to mix, and I can get get the crowd on th
 
 I offer a wide range of services, ranging from voiceover work to birthday parties!
 
----
+<hr class="fancy" />
 
 > "Another quote!"
 
@@ -33,10 +33,12 @@ Donec interdum eget nulla at elementum. **Fusce vitae euismod odio:**
 
 _Integer condimentum metus et sapien sollicitudin fermentum. Integer ultricies libero nec interdum ornare._
 
----
+<hr class="fancy" />
 
 ![Photo of Mark T at Popworld](/assets/photos/mark-popworld.jpg)
 
 > _Some signing off words explaining why I really am the best choice! Words words words!_
 
 Donec et mi leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. **[Contact me now to get started.](/contact/)**
+
+<hr class="fancy" />
