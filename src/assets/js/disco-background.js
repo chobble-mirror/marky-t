@@ -59,7 +59,7 @@
         const lights = document.querySelectorAll(".disco-light");
 
         lights.forEach((light) => {
-          const opacity = Math.random() * 0.7;
+          const opacity = Math.random() * 1;
           light.style.opacity = opacity;
 
           const size = Math.random() * 330 + 40;

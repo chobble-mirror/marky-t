@@ -15,6 +15,7 @@
   {% elsif heading_image %}
     <img
       src="/assets/photos/{{ heading_image }}"
+      loading="eager"
       alt="{{ heading_image_alt }}"
       eleventy:widths="1400, 900, 600, 400, 300"
       sizes="100%"

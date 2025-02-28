@@ -10,7 +10,7 @@
 
     <title>{{ meta_title }}</title>
 
-    {% if meta_description -%}
+    {% include "head-favicon.html" %} {% if meta_description -%}
     <meta name="description" content="{{ meta_description | escape }}" />
     {% endif -%}
 
