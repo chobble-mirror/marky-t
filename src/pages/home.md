@@ -9,6 +9,8 @@ meta_title: DJ Marky T
 permalink: "/"
 ---
 
+I'm Mark, a DJ with over 20 years of experience playing at Essex's top nightclubs, premier wedding venues, radio stations and large-scale events. I provide personalized DJ services for weddings, corporate gatherings and private celebrations across Essex and beyond.
+
 > "A long-ish quote from a delighted customer!"
 
 I started entertaining from the young age of eleven, progressing from friends and family to children's parties to radio and night clubs since 2003 including Talk, Dukes, Sugar Hut, Mayhem, Eclipse, Bar Zero, Bar Bluu, Mantra Tao, Storm to name just a few of the legendary nightlife of Essex.
@@ -19,7 +21,7 @@ I am a personality DJ with the ability to mix, and I can get get the crowd on th
 
 I offer a wide range of services, ranging from voiceover work to birthday parties!
 
-<hr class="fancy" />
+---
 
 > "TODO: Another quote!"
 
@@ -37,7 +39,7 @@ Donec interdum eget nulla at elementum. **Fusce vitae euismod odio:**
 
 _Integer condimentum metus et sapien sollicitudin fermentum. Integer ultricies libero nec interdum ornare._
 
-<hr class="fancy" />
+---
 
 ![Photo of Mark T at Popworld](/assets/photos/mark-popworld.jpg)
 
@@ -45,4 +47,4 @@ _Integer condimentum metus et sapien sollicitudin fermentum. Integer ultricies l
 
 Donec et mi leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. **[Contact me now to get started.](/contact/)**
 
-<hr class="fancy" />
+---
