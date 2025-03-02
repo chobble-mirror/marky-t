@@ -10,4 +10,4 @@ jobs:
       - run: |
           cd ${{ github.workspace }}
           nix-build
-          neocities push --prune result
+          # neocities push --prune result
