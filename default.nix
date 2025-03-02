@@ -3,11 +3,11 @@ let
     url = "https://github.com/NixOS/nixpkgs/archive/release-24.05.tar.gz";
     # sha256 = "0000000000000000000000000000000000000000000000000000000000000000";
   };
-  pkgs = import nixpkgsSource { };
+  defaultPkgs = import nixpkgsSource { };
 in
 
 {
-  pkgs ? pkgs,
+  pkgs ? defaultPkgs,
 }:
 
 let
