@@ -1,0 +1,9 @@
+on: [push]
+jobs:
+  ls:
+    runs-on: native
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          ls ${{ github.workspace }}
+          nix-build
