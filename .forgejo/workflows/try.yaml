@@ -1,7 +1,7 @@
 on: [push]
 jobs:
   ls:
-    runs-on: ubuntu-latest
+    runs-on: native
     steps:
       - uses: actions/checkout@v4
       - run: |
