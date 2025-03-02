@@ -1,7 +1,7 @@
 on: [push]
 env:
   NIX_PATH: nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos
-  NEOCITIES_API_KEY: ${{ env.NEOCITIES_API_KEY }}
+  NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
 jobs:
   ls:
     runs-on: native
