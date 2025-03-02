@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          ls ${{ github.workspace }}
+          cd ${{ github.workspace }}
           nix-build
           neocities push --prune result
