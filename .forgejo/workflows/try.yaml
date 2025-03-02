@@ -1,4 +1,6 @@
 on: [push]
+env:
+  NIX_PATH: nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos
 jobs:
   ls:
     runs-on: native
