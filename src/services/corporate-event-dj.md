@@ -4,6 +4,7 @@ heading_text: Corporate Event DJ Services in Essex
 link_title: Corporate Events
 meta_description: TODO
 meta_title: Corporate Event DJ
+short_snippet: Professional entertainment for your company gathering.
 snippet: I understand that corporate events require a special touch.
 ---
 

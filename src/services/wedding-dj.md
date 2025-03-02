@@ -4,8 +4,11 @@ heading_text: Wedding DJ Services
 link_title: Weddings
 meta_description: TODO
 meta_title: Wedding DJ
+short_snippet: Creating the perfect soundtrack for your special day.
 snippet: A dedicated professional who'll ensure your day flows perfectly from ceremony to last dance.
 ---
+
+> "I highly recommend this fine man."
 
 ## Your Perfect Wedding, The Ultimate Party
 

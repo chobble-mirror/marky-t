@@ -9,42 +9,44 @@ meta_title: DJ Marky T
 permalink: "/"
 ---
 
-I'm Mark, a DJ with over 20 years of experience playing at Essex's top nightclubs, premier wedding venues, radio stations and large-scale events. I provide personalized DJ services for weddings, corporate gatherings and private celebrations across Essex and beyond.
+# Welcome to Marky T Entertainment
 
-> "A long-ish quote from a delighted customer!"
+## London & Essex's Premier DJ for Weddings, Corporate Events & Nightclubs
 
-I started entertaining from the young age of eleven, progressing from friends and family to children's parties to radio and night clubs since 2003 including Talk, Dukes, Sugar Hut, Mayhem, Eclipse, Bar Zero, Bar Bluu, Mantra Tao, Storm to name just a few of the legendary nightlife of Essex.
+Hello! I'm Mark, better known as Marky T - a professional DJ with over 20 years of experience creating unforgettable musical experiences across London and Essex.
 
-I have appeared on various TV and radio channels, coming second place on Capital Fm's 'Radio Stars' and frequent daytime shows on Funky Sx. I am now a weekday presenter on Radio Essex.
-
-I am a personality DJ with the ability to mix, and I can get get the crowd on the dance floor - understanding what to play and when to play it.
-
-I offer a wide range of services, ranging from voiceover work to birthday parties!
+From my beginnings at age 9 with a simple twin tape deck to hosting weekday shows on Radio Essex, my passion for music and entertainment has taken me to the finest venues and most special celebrations.
 
 ---
 
-> "TODO: Another quote!"
-
-<div class="right">
-
-![Photo of Mark T in a suit and yellow bow tie](/assets/photos/mark-selfie.jpg)
-
-</div>
-
-**TODO:** Pellentesque in ex id mauris semper volutpat. In sit amet lectus enim. Integer et velit laoreet est ultrices mollis. Suspendisse potenti. Morbi ut tellus id ante placerat dapibus.
-
-Donec interdum eget nulla at elementum. **Fusce vitae euismod odio:**
+## Services
 
 {% include "services-list.html" %}
 
-_Integer condimentum metus et sapien sollicitudin fermentum. Integer ultricies libero nec interdum ornare._
-
 ---
+
+## What Makes Me Different
+
+I'm not just someone who plays tracks - I'm a personality who understands how to read a room, mix seamlessly, and keep everyone dancing. With experience at iconic venues like Sugar Hut, Dukes, and Eclipse, I bring nightclub energy with wedding-perfect professionalism.
 
 ![Photo of Mark T at Popworld](/assets/photos/mark-popworld.jpg)
 
-> _TODO: Some signing off words explaining why I really am the best choice! Words words words!_
+---
 
-Donec et mi leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. **[Contact me now to get started.](/contact/)**
+## What My Clients Say
+
+> "Mark DJ'd for my 40th and he was absolutely brilliant! He played all the tunes I'd requested and kept the dance floor packed! Everyone is still talking about how fab the music was!" - Claire
+
+> "Marky T played at our wedding at Apton Hall and I must say, what an excellent, professional DJ he was. Music was played as requested, and he knew how to keep the crowd on their feet." - Brian
+
+> "We had Mark at our wedding reception and we couldn't have been happier. Great songs and personality to match. Highly recommend for anyone with an event coming up!" - Martin
+
+[Click here to see more reviews.](/reviews/)
 
 ---
+
+## Let's Create Memories
+
+Whether you're planning your dream wedding, a milestone birthday, or a corporate event that needs that special touch, I'm here to make it memorable.
+
+**[Contact me now](/contact/) for a complimentary meet and greet to discuss your entertainment needs!**

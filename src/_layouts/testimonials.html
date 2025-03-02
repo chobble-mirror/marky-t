@@ -4,14 +4,14 @@ layout: base.html
 
 <article>{{ content }}</article>
 <hr>
-{% for testimonial in testimonials %}
+{% for testimonial in collections.testimonials %}
   {% if forloop.first == false %}
     <hr class="fancy" />
   {% endif %}
   <blockquote>
-    &#8220;{{ testimonial.text }}&#8221;
+    &#8220;{{ testimonial.content }}&#8221;
     <footer>
-      <a rel="nofollow" href="{{ testimonial.url }}">{{ testimonial.name }}</a>
+      {{ testimonial.data.name }}
     </footer>
   </blockquote>
 {% endfor %}

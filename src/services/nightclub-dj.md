@@ -4,6 +4,7 @@ heading_text: Nightclub DJ
 link_title: Club nights
 meta_description: TODO
 meta_title: Club & Event DJ - Marky T
+short_snippet: Keeping the dance floor packed all night long.
 snippet: I've spent over two decades mastering my craft in Essex's most legendary venues.
 ---
 
