@@ -1,16 +1,9 @@
-let
-  nixpkgsSource = builtins.fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/release-24.05.tar.gz";
-    # sha256 = "0000000000000000000000000000000000000000000000000000000000000000";
-  };
-  defaultPkgs = import nixpkgsSource { };
-in
-
 {
-  pkgs ? defaultPkgs,
+  pkgs ? import <nixpkgs> { },
 }:
 
 let
+  # Input source files
   src = ./.;
   nodeDeps = import ./node-deps.nix { inherit pkgs; };
   inherit (nodeDeps) packageJSON nodeModules;
