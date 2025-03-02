@@ -1,38 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Eleventy" />
-    <link rel="stylesheet" href="/css/style.css" />
-
-    {% include "head-fonts.html" %}
-
-    <title>{{ meta_title }}</title>
-
-    {% include "head-favicon.html" %} {% if meta_description -%}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="Eleventy" />
+  <link rel="stylesheet" href="/css/style.css" />
+  {% include "head-fonts.html" %}
+  <title>{{ meta_title }}</title>
+  {% include "head-favicon.html" %} {% if meta_description -%}
     <meta name="description" content="{{ meta_description | escape }}" />
-    {% endif -%}
-
-    <link rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <script src="/assets/js/disco-background.js" defer></script>
-
-    {% if layout == "contact.html" -%}
+  {% endif -%}
+  <link rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <script src="/assets/js/disco-background.js" defer></script>
+  {% if layout == "contact.html" -%}
     <script src="https://unpkg.com/@botpoison/browser" async></script>
-    {% endif -%}
-  </head>
-  <body class="{{ css }}">
-    <div class="container">
-      <header>{% include "header.html" %}</header>
-      {% include "heading.html" %}
-      <main>{{content }}</main>
-      <footer>{% include "footer.html" %}</footer>
-    </div>
-    <div class="disco-container"></div>
-  </body>
+  {% endif -%}
+  <script data-goatcounter="https://analytics.djmarkyt.co.uk/count"
+      async src="https://analytics.djmarkyt.co.uk/count.js"></script>
+</head>
+<body class="{{ css }}">
+  <div class="container">
+    <header>{% include "header.html" %}</header>
+    {% include "heading.html" %}
+    <main>{{content }}</main>
+    <footer>{% include "footer.html" %}</footer>
+  </div>
+  <div class="disco-container"></div>
+</body>
 </html>
