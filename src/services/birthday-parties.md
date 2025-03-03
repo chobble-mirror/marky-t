@@ -8,10 +8,6 @@ short_snippet: Creating memorable celebrations for all ages.
 snippet: From milestone birthdays to surprise parties, I'll keep your guests dancing all night long.
 ---
 
-# Birthday Party DJ
-
-## Make Your Celebration Unforgettable
-
 Your birthday deserves to be celebrated in style! As someone who's been creating electric atmospheres in Essex's top nightclubs since 2003, I know exactly how to transform any venue into the perfect party space.
 
 ---
