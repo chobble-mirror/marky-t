@@ -8,10 +8,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Build
-        run: nix-build
-      #- name: Deploy
-      #  run: neocities push --prune result
+        id: build
+        run: echo "build_output=$(nix-build)" >> $GITHUB_OUTPUT
+      
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:
@@ -19,4 +20,4 @@ jobs:
           cleanup: false
           neocities_supporter: true
           preview_before_deploy: false
-          dist_dir: ${{ github.workspace }}/result
+          dist_dir: ${{ steps.build.outputs.build_output }}
