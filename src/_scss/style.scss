@@ -14,9 +14,8 @@
   --color-text: #eee;
   --color-text-secondary: #ddd;
   --color-scrollbar: #cacae8;
-  --font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-    Cantarell, "Helvetica Neue", sans-serif;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --hover-brightness: 1.2;
   --justify-important: center;
   --justify-normal: left;
@@ -55,6 +54,11 @@ body {
 .container {
   z-index: 1;
   margin: 0 auto;
+  width: 1300px;
+  max-width: 100%;
+}
+
+.container > header {
   background: #11111111;
   background: linear-gradient(
     90deg,
@@ -62,16 +66,11 @@ body {
     #11111100 50%,
     #00000022 99%
   );
-  width: 1300px;
-  max-width: 100%;
-}
-
-.container > header {
   z-index: 3;
   padding: 3rem 1rem 3rem 2rem;
   .brand {
     display: flex;
-    margin-right: 4rem;
+    margin-right: 2rem;
     gap: 1rem;
     align-items: center;
     word-break: keep-all;
@@ -105,7 +104,7 @@ body {
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--color-secondary);
     text-align: center;
     width: 100%;
@@ -113,7 +112,7 @@ body {
     margin: 0;
     padding: 1rem;
 
-    @media (min-width: 789px) {
+    @media (min-width: 769px) {
       font-size: 3rem;
     }
   }
@@ -132,12 +131,15 @@ body {
 }
 
 main {
+  background: #11111122;
   min-height: 100vh;
   padding: 3rem 2rem;
   position: relative;
   font-size: 1.3rem;
+  text-shadow: 1px 1px 2px black;
 
   a {
+    text-shadow: none;
     text-decoration: underline;
   }
   video,
@@ -180,13 +182,20 @@ main {
     background-size: 100% 100%;
     aspect-ratio: 3191/219;
     background-color: transparent;
-    filter: invert(60%);
+    filter: invert(90%);
     margin: 3rem auto;
     height: auto;
   }
 }
 
 .container > footer {
+  background: #11111111;
+  background: linear-gradient(
+    90deg,
+    #00000022 1%,
+    #11111100 50%,
+    #00000022 99%
+  );
   padding: 3rem 1rem;
   border-top: 4px solid var(--color-secondary);
   font-weight: 400;
@@ -254,7 +263,9 @@ main {
       a {
         color: var(--color-secondary);
       }
-      font-size: 2rem;
+      @media (min-width: 769px) {
+        font-size: 2rem;
+      }
       &::after {
         content: "";
         display: block;
@@ -350,7 +361,10 @@ nav {
   font-weight: 400;
 
   @media (min-width: 900px) {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 1.6rem;
   }
 
   img {
@@ -364,7 +378,7 @@ nav {
     padding: 0;
     li {
       display: inline-block;
-      margin: 0 1rem;
+      margin: 0;
       position: relative;
       text-align: left;
       a {
@@ -372,10 +386,17 @@ nav {
         &.active {
           color: var(--color-secondary);
         }
+        @media (min-width: 769px) {
+          padding: 0.5rem;
+        }
+        @media (min-width: 900px) {
+          padding: 0.5rem 1rem;
+        }
       }
-      /* Nav Dropdown */
-      &:hover ul {
-        display: block;
+      @media (min-width: 769px) {
+        &:hover ul {
+          display: block;
+        }
       }
       ul {
         display: none;
@@ -430,9 +451,11 @@ nav {
         background: none;
         border: none;
         box-shadow: none;
-        display: block;
         position: static;
         transform: none;
+        body.services & {
+          display: block;
+        }
       }
     }
   }
@@ -511,16 +534,16 @@ a {
     var(--color-secondary) 50%,
     var(--color-link) 50%
   );
-  background-position:100%;
-  background-size:200% 100%;
-  background-clip:text;
-  -webkit-background-clip:text;
-  
+  background-position: 100%;
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+
   transition: background-position 0.2s ease;
   &:hover,
   &:active {
     // color: var(--color-secondary);
-    background-position:0;
+    background-position: 0;
   }
 }
 
@@ -772,6 +795,7 @@ table {
 
 /* Quotes */
 blockquote {
+  color: var(--color-text-secondary);
   display: block;
   font-size: 3rem;
   line-height: 3.5rem;
@@ -781,7 +805,6 @@ blockquote {
   text-align: var(--justify-important);
   footer,
   strong {
-    color: var(--color-text-secondary);
     display: block;
     font-size: 1.4rem;
     line-height: var(--line-height);

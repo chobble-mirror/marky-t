@@ -46,11 +46,9 @@ The mark of a professional DJ isn't just playing songs—it's knowing what to pl
 
 ## What My Birthday Clients Say
 
-> "Mark DJ'd for my 40th at the weekend and he was absolutely brilliant! He played all the tunes I'd requested in advance and kept the dance floor packed! Everyone is still talking about how fab the music was!" - Claire
+> "Mark DJ'd for my 40th at the weekend and he was absolutely brilliant! He played all the tunes I'd requested in advance and kept the dance floor packed! Everyone is still talking about how fab the music was!" **Claire**
 
-> "Mark played at my engagement party recently and I couldn't recommend him enough. We had ages ranging from 15-70 and he entertained them all, great music and laughs!" - Steve
-
-> "We booked Mark for my husband's surprise 40th. Absolutely brilliant, would highly recommend." - Sophie
+> "We booked Mark for my husband's surprise 40th. Absolutely brilliant, would highly recommend." **Sophie**
 
 ---
 

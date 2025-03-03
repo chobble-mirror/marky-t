@@ -3,7 +3,7 @@ heading_text: Contact Marky T
 layout: contact.html
 link_order: 4
 link_title: Contact
-meta_description: TODO
+meta_description:
 meta_title: Contact Me
 ---
 

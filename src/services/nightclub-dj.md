@@ -1,8 +1,8 @@
 ---
 heading_image: mark-nightclub.jpg
 heading_text: Nightclub DJ
-link_title: Club nights
-meta_description: TODO
+link_title: Club Nights
+meta_description:
 meta_title: Club & Event DJ - Marky T
 short_snippet: Keeping the dance floor packed all night long.
 snippet: I've spent over two decades mastering my craft in Essex's most legendary venues.
@@ -16,7 +16,7 @@ With turntables in my blood since the age of 9, I've spent over two decades mast
 
 ## The Club Experience, Anywhere
 
-Whether you're planning a corporate party that needs that authentic nightclub energy, a milestone birthday celebration, or an exclusive private event, I bring authentic club DJ experience to your venue. No pre-recorded sets or simply pressing play—I mix live, create seamless transitions, and build the perfect atmosphere for your event.
+Whether you're planning a corporate party that needs that authentic nightclub energy, a milestone birthday celebration, or an exclusive private event, I bring authentic club DJ experience to your venue. No pre-recorded sets or simply pressing play - I mix live, create seamless transitions, and build the perfect atmosphere for your event.
 
 ---
 
@@ -24,7 +24,7 @@ Whether you're planning a corporate party that needs that authentic nightclub en
 
 ### Live Mixing & Beatmatching
 
-Just like in the clubs, I mix tracks live—no awkward stops or breaks between songs. This creates that authentic nightclub experience with seamless transitions that keep the energy flowing all night long.
+Just like in the clubs, I mix tracks live, with no awkward stops or breaks between songs. This creates that authentic nightclub experience with seamless transitions that keep the energy flowing all night long.
 
 ### Reading The Room
 
@@ -52,7 +52,7 @@ Whether it's a milestone 30th, 40th, or 50th, I'll bring the energy of Essex's b
 
 ### Student Events
 
-Having played at countless student nights across Essex and London, I understand exactly how to create the right atmosphere for university crowds—high energy sets that keep the dance floor packed.
+Having played at countless student nights across Essex and London, I understand exactly how to create the right atmosphere for university crowds - high energy sets that keep the dance floor packed.
 
 ### Private Club Nights
 
@@ -62,7 +62,7 @@ Planning to hire a venue for your own club night? With my experience both behind
 
 ## As Heard On Radio Essex
 
-Catch my weekly show on Radio Essex where I showcase the latest tracks and classic anthems. My radio experience means I bring both technical mixing skills and a personality DJ approach to your event—the perfect combination for creating an unforgettable night.
+Catch my weekly show on Radio Essex where I showcase the latest tracks and classic anthems. My radio experience means I bring both technical mixing skills and a personality DJ approach to your event - the perfect combination for creating an unforgettable night.
 
 ---
 

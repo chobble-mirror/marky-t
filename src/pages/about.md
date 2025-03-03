@@ -3,7 +3,7 @@ heading_image: mark-suit.jpg
 heading_text: About Marky T
 link_order: 1
 link_title: About
-meta_description: TODO
+meta_description:
 meta_title: About Marky T
 ---
 

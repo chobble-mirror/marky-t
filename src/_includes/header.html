@@ -8,7 +8,7 @@
     {%- assign pages = pages | sort: 'data.link_order' -%}
     {%- for p in pages -%}
       {% if p.data.link_title %}
-        {% assign is_service = p.data.link_title == "Services" %}
+        {% assign is_service = p.data.link_title == "DJ" %}
         {% assign is_service_page = page.data.tags contains "service" %}
         {% assign is_active_page = page.url == p.url %}
         {% assign is_service_active = is_service and is_service_page %}
@@ -21,7 +21,7 @@
               class="active-service"
             {% endif %}
           >{{ p.data.link_title }}</a>
-          {% if p.data.link_title == "Services" %}
+          {% if p.data.link_title == "DJ" %}
           <ul>
             {% for service in collections.service %}
               <li>

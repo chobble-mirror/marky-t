@@ -1,27 +1,19 @@
 ---
-heading_text: Wedding & Corporate Event DJ
+heading_text: Wedding & Event DJ in Essex
 heading_video: homepage.mp4
 layout: home.html
 link_order: 0
 link_title: Home
-meta_description: TODO
+meta_description:
 meta_title: DJ Marky T
 permalink: "/"
 ---
 
-# Welcome to Marky T Entertainment
-
-## London & Essex's Premier DJ for Weddings, Corporate Events & Nightclubs
+## London & Essex's Premier Weddings & Events DJ
 
 Hello! I'm Mark, better known as Marky T - a professional DJ with over 20 years of experience creating unforgettable musical experiences across London and Essex.
 
 From my beginnings at age 9 with a simple twin tape deck to hosting weekday shows on Radio Essex, my passion for music and entertainment has taken me to the finest venues and most special celebrations.
-
----
-
-## Services
-
-{% include "services-list.html" %}
 
 ---
 
@@ -41,7 +33,7 @@ I'm not just someone who plays tracks - I'm a personality who understands how to
 
 > "We had Mark at our wedding reception and we couldn't have been happier. Great songs and personality to match. Highly recommend for anyone with an event coming up!" - Martin
 
-[Click here to see more reviews.](/reviews/)
+[Click here for more reviews.](/reviews/)
 
 ---
 
@@ -54,3 +46,11 @@ I'm not just someone who plays tracks - I'm a personality who understands how to
 Whether you're planning your dream wedding, a milestone birthday, or a corporate event that needs that special touch, I'm here to make it memorable.
 
 **[Contact me now](/contact/) for a complimentary meet and greet to discuss your entertainment needs!**
+
+---
+
+## Other Events
+
+As well as [weddings](/weddings/) I can bring the party to all types of events, including:
+
+{% include "services-list.html" %}

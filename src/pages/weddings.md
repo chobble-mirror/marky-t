@@ -1,8 +1,9 @@
 ---
 heading_image: mark-wedding.jpg
 heading_text: Wedding DJ Services
+link_order: 2
 link_title: Weddings
-meta_description: TODO
+meta_description:
 meta_title: Wedding DJ
 short_snippet: Creating the perfect soundtrack for your special day.
 snippet: A dedicated professional who'll ensure your day flows perfectly from ceremony to last dance.
@@ -24,12 +25,12 @@ But your wedding deserves more than just someone playing songs—it deserves a d
 
 ## Why Choose Me For Your Wedding?
 
-### Not Just Music—A Complete Experience
+### Not Just Music: A Complete Experience
 
 When you book me, you're getting more than a DJ. You're getting:
 
 - **A Wedding Host** – I'll make announcements, coordinate with your venue team, and keep everything running smoothly
-- **A Mixing Specialist** – No awkward gaps between songs—I mix live for a seamless, nightclub-quality experience
+- **A Mixing Specialist** – No awkward gaps between songs, as I mix live for a seamless, nightclub-quality experience
 - **A Dance Floor Expert** – With 20+ years in Essex's top nightclubs, I know exactly how to read a room and keep guests dancing
 - **A Planning Partner** – From our first chat to your wedding day, I'll help create a musical journey that perfectly reflects you both
 
@@ -76,6 +77,10 @@ This approach means once the party starts, the energy never drops—I'll build t
 
 ---
 
+![Marky T's wedding setup with "Love" in letters, disco lights, and big speakers](/assets/photos/wedding-setup.jpg)
+
+---
+
 ## Wedding Packages
 
 ### Full Day Coverage
@@ -108,6 +113,10 @@ All packages include my professional mixing service, ensuring no awkward gaps be
 ## Essex Wedding Venues
 
 Having performed at countless Essex wedding venues—from barns and country houses to hotels and exclusive venues—I understand their specific requirements and limitations. This local knowledge ensures smooth coordination with venue staff and perfect setup for your special day.
+
+---
+
+> "Absolutely brilliant, would highly recommend."
 
 ---
 

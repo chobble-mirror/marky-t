@@ -6,10 +6,10 @@ layout: base.html
 <hr>
 {% for testimonial in collections.testimonials %}
   {% if forloop.first == false %}
-    <hr class="fancy" />
+    <hr>
   {% endif %}
   <blockquote>
-    &#8220;{{ testimonial.content }}&#8221;
+    {{ testimonial.content }}
     <footer>
       {{ testimonial.data.name }}
     </footer>
