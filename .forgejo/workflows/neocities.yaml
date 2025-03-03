@@ -11,13 +11,18 @@ jobs:
       
       - name: Build
         id: build
-        run: echo "build_output=$(readlink -f $(nix-build))" >> $GITHUB_OUTPUT
+        run: |
+          BUILD_PATH=$(nix-build)
+          echo "build_output=$BUILD_PATH" >> $GITHUB_OUTPUT
+          ls -la $BUILD_PATH  # Debug: check if path exists
+          echo "Path contents:"
+          ls -la $BUILD_PATH/*  # Debug: show contents
       
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:
           api_key: ${{ secrets.NEOCITIES_API_KEY }}
-          cleanup: false
+          cleanup: true
           neocities_supporter: true
           preview_before_deploy: false
           dist_dir: ${{ steps.build.outputs.build_output }}
