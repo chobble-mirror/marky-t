@@ -1,3 +1,7 @@
+---
+permalink: false
+---
+
 # Editing Page Content
 
 The page content is written in Markdown - [click here for a Markdown formatting guide](https://www.markdownguide.org/cheat-sheet/)
