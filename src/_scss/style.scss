@@ -93,6 +93,13 @@ body {
 }
 
 .heading {
+  background: #11111111;
+  background: linear-gradient(
+    90deg,
+    #00000022 1%,
+    #11111100 50%,
+    #00000022 99%
+  );
   border-bottom: 2px solid var(--color-secondary);
   position: relative;
 
