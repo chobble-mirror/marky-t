@@ -13,16 +13,15 @@ jobs:
         id: build
         run: |
           BUILD_PATH=$(nix-build)
-          echo "build_output=$BUILD_PATH" >> $GITHUB_OUTPUT
-          ls -la $BUILD_PATH  # Debug: check if path exists
-          echo "Path contents:"
-          ls -la $BUILD_PATH/*  # Debug: show contents
-      
+          DEPLOY_PATH="$GITHUB_WORKSPACE/dist"
+          mkdir -p "$DEPLOY_PATH"
+          cp -r "$BUILD_PATH"/* "$DEPLOY_PATH"/
+
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:
           api_key: ${{ secrets.NEOCITIES_API_KEY }}
-          cleanup: true
+          cleanup: false
           neocities_supporter: true
           preview_before_deploy: false
-          dist_dir: ${{ steps.build.outputs.build_output }}
+          dist_dir: dist
