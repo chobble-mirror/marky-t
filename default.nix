@@ -52,6 +52,6 @@ pkgs.stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out
     cp -r _site/* $out/
-    rm -rf node_modules _site package.json
+    rm -rf node_modules/.yarn-integrity _site package.json
   '';
 }
