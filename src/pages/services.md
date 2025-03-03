@@ -1,5 +1,6 @@
 ---
 heading_text: DJ Services
+heading_image: dj-equipment.jpg
 layout: "services.html"
 link_order: 3
 link_title: DJ
