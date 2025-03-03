@@ -11,7 +11,7 @@ jobs:
       
       - name: Build
         id: build
-        run: echo "build_output=$(nix-build)" >> $GITHUB_OUTPUT
+        run: echo "build_output=$(readlink -f $(nix-build))" >> $GITHUB_OUTPUT
       
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v3
