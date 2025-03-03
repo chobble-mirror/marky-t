@@ -1,5 +1,5 @@
 ---
-heading_text: Luxury Wedding & Corporate Event DJ
+heading_text: Wedding & Corporate Event DJ
 heading_video: homepage.mp4
 layout: home.html
 link_order: 0
@@ -29,7 +29,7 @@ From my beginnings at age 9 with a simple twin tape deck to hosting weekday show
 
 I'm not just someone who plays tracks - I'm a personality who understands how to read a room, mix seamlessly, and keep everyone dancing. With experience at iconic venues like Sugar Hut, Dukes, and Eclipse, I bring nightclub energy with wedding-perfect professionalism.
 
-![Photo of Mark T at Popworld](/assets/photos/mark-popworld.jpg)
+![Photo of a wedding disco in full swing](/assets/photos/wedding-disco.jpg)
 
 ---
 
@@ -42,6 +42,10 @@ I'm not just someone who plays tracks - I'm a personality who understands how to
 > "We had Mark at our wedding reception and we couldn't have been happier. Great songs and personality to match. Highly recommend for anyone with an event coming up!" - Martin
 
 [Click here to see more reviews.](/reviews/)
+
+---
+
+![Photo of a wedding party cheering](/assets/photos/wedding-cheering.jpg)
 
 ---
 

@@ -18,6 +18,10 @@ But your wedding deserves more than just someone playing songs—it deserves a d
 
 ---
 
+![Photo of a happy bride surrounded by friends on her wedding day](/assets/photos/wedding-bride.jpg)
+
+---
+
 ## Why Choose Me For Your Wedding?
 
 ### Not Just Music—A Complete Experience
@@ -28,6 +32,12 @@ When you book me, you're getting more than a DJ. You're getting:
 - **A Mixing Specialist** – No awkward gaps between songs—I mix live for a seamless, nightclub-quality experience
 - **A Dance Floor Expert** – With 20+ years in Essex's top nightclubs, I know exactly how to read a room and keep guests dancing
 - **A Planning Partner** – From our first chat to your wedding day, I'll help create a musical journey that perfectly reflects you both
+
+---
+
+![Happily married couple kissing on the wedding dance floor](/assets/photos/wedding-kiss.jpg)
+
+---
 
 ### The Complete Wedding DJ Package
 
