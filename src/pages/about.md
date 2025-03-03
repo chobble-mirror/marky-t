@@ -7,7 +7,7 @@ meta_description:
 meta_title: About Marky T
 ---
 
-Hello there! I'm Mark, but you can call me Marky T - a passionate Wedding DJ, Wedding Host and VIP Party DJ with Sweet Vibe Events.
+Hello there! I'm Mark, but you can call me Marky T - a passionate Wedding DJ, Wedding Host and Party DJ based in Essex and serving the whole UK and abroad!
 
 ## My Journey
 
