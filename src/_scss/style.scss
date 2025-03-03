@@ -368,7 +368,7 @@ nav {
       position: relative;
       text-align: left;
       a {
-        color: var(--color-text);
+        // color: var(--color-text);
         &.active {
           color: var(--color-secondary);
         }
@@ -504,9 +504,23 @@ a {
   font-weight: bold;
   transition: color 0.3s ease-in;
   text-decoration: none;
+
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-secondary) 50%,
+    var(--color-link) 50%
+  );
+  background-position:100%;
+  background-size:200% 100%;
+  background-clip:text;
+  -webkit-background-clip:text;
+  
+  transition: background-position 0.2s ease;
   &:hover,
   &:active {
-    color: var(--color-secondary);
+    // color: var(--color-secondary);
+    background-position:0;
   }
 }
 
