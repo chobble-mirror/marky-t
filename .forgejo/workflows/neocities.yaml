@@ -19,4 +19,4 @@ jobs:
           cleanup: false
           neocities_supporter: true
           preview_before_deploy: false
-          dist_dir: ${{ GITHUB_WORKSPACE }}/result
+          dist_dir: _site
